@@ -10,7 +10,8 @@ import 'package:open_document/open_document.dart';
 //functions for pdf printing
 
 class pdfservice {
-  static Future<Uint8List> pdfgen(String name, String contact, String email, String wep) {
+  static Future<Uint8List> pdfgen(
+      String name, String contact, String email, String wep) {
     final pdf = pw.Document();
     pdf.addPage(
       pw.Page(
@@ -19,6 +20,6 @@ class pdfservice {
         },
       ),
     );
-    return pdf.save();
+    return pdf.save(); //You reached here 12-4 9:19 fuck this shit
   }
 }
